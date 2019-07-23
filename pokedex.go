@@ -5,6 +5,7 @@ import "os"
 import "strings"
 import "net/http"
 import "encoding/json"
+import "strconv"
 
 var poke = new(pokemon)
 var it = new(item)
@@ -22,6 +23,13 @@ func main(){
 	if q_url=="" {
 		fmt.Println("Please fill Pokemon Species / Item parameter")
 		os.Exit(1)
+	}
+	if len(os.Args)==2 {
+		_, err := strconv.ParseInt(os.Args[1], 10, 0)
+		if err==nil {
+			fmt.Println("Pokemon Species or Item not found.")
+			os.Exit(1)
+		}
 	}
 
 	// Process
