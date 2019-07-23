@@ -9,7 +9,6 @@ import "strconv"
 
 var poke = new(pokemon)
 var it = new(item)
-var test int
 
 func main(){
 	var q string
