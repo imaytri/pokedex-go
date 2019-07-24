@@ -11,7 +11,7 @@ How to run this :
 1. open cli
 2. go to directory /pokedex-go/build/
 2. in windows run pokedex-go.exe with pokemon or item name as argument parameter. ex: pokedex-go.exe pikachu
-3. in linux run ./pokedex-go aslo with pokemon or item name as argument parameter. ex: ./pokedex-go ability capsule
+3. in linux run ./pokedex-go also with pokemon or item name as argument parameter. ex: ./pokedex-go ability capsule
 
 *) note :
 if you got error (Permission Denied) when running in linux, you can try run "chmod +x pokedex-go" then run the application again.
